@@ -1,0 +1,42 @@
+################################ Intervention 0 ################################
+[[Fit Statistics]]
+    # fitting method   = least_squares
+    # function evals   = 10
+    # data points      = 90
+    # variables        = 2
+    chi-square         = 4.06542074
+    reduced chi-square = 0.04619796
+    Akaike info crit   = -274.756319
+    Bayesian info crit = -269.756699
+[[Variables]]
+    I:      0.00990099 (fixed)
+    R:      0 (fixed)
+    n:      1 (fixed)
+    S:      0.990099 (fixed)
+    beta:   0.29950090 +/- 0.02746246 (9.17%) (init = 1)
+    gamma:  0.09983363 +/- 0.02391055 (23.95%) (init = 1)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(beta, gamma) = 0.729
+
+################################ Intervention 1 ################################
+[[Fit Statistics]]
+    # fitting method   = least_squares
+    # function evals   = 11
+    # data points      = 507
+    # variables        = 2
+    chi-square         = 164.264175
+    reduced chi-square = 0.32527559
+    Akaike info crit   = -567.406769
+    Bayesian info crit = -558.949747
+[[Variables]]
+    I:      0.290754 (fixed)
+    R:      0.4606246 (fixed)
+    n:      1 (fixed)
+    S:      0.2486214 (fixed)
+    beta:   0.29991169 +/- 0.43104928 (143.73%) (init = 1)
+    gamma:  0.01976419 +/- 0.00484181 (24.50%) (init = 1)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(beta, gamma) = -0.445
+
+################################ Intervention(s) ##################################
+The intervention(s) are at t = [30]
