@@ -6,3 +6,6 @@ This Python script is the starting point of the tool. The class "Ui_MainWindow" 
 
 ## fitting_tool_logic.py ## 
 This script contains three functions in total. The function "Fit" takes care of the actual execution of the calculations. The functions "Get_Data" and "Get_Model" control the loading of the respective files into the user interface. 
+
+## genfitalg.py ## 
+This class takes a model and data and generally calculates those parameters of the model for which the Mean Square Error with respect to the data is as small as possible. This class is called by the "Fit" method. 
