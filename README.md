@@ -23,3 +23,4 @@ This script contains two classes that are used to create an additional thread (b
 Diese Datei wurde mit dem sogenannten QtDesigner erstellt. Diese Datei kann in eine Python Datei umgewandelt werden und generiert automatisch den Code, der notwendig ist um die Benutzerschnittstelle zu zeichnen. Der entsprechende Befehl für die Erstellung der Python Datei ist "python -m PyQt5.uic.pyuic -x [FILENAME].ui -o [FILENAME].py"
 
 ## additional information ## 
+The scripts "get_data.py" and "standard_models.py" are not used by the other functions and were only used to test the code. 
