@@ -12,3 +12,6 @@ This class takes a model and data and generally calculates those parameters of t
 
 ## find_interventions.py ## 
 This class also calculates the mean square error between the model and the data, but takes into account the possible occurrence of parameter changes, i.e. so-called "interventions". The number of possible interventions must be defined by the user beforehand.
+
+## FigureCanvas.py ## 
+This script contains two classes whose objects are used in the script "fitting_tool_new.py" to draw the data on a matplotlib based canvas so that it can be displayed to the user. 
