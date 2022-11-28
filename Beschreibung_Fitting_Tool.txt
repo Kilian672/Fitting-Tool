@@ -1,0 +1,64 @@
+Das Tool erlaubt dem Nutzer zwischen insgesamt vier Tabs auszuwählen. 
+Die vier Tabs heißen "Upload", "Fitting", "Settings" und "Edit". 
+
+Upload Tab: 
+	Im Upload Tab sind alle Funktionalitäten enthalten, die dem Upload der
+	Daten- und Modelldatei dienen. Eine Modelldatei kann man mit Hilfe des
+	Epidemic Model Designers automatisch erzeugen. Die Datei sollte nicht 
+	manuell verändert werden. 
+	Vorgehensweise: 		
+		- Modelldatei hochladen (Upload Model)
+		- Einstellungen vornehmen 
+			- Zeilen in denen die Daten liegen angeben (start row, end row) 
+			- Bevölkerungsgröße angeben (population) 
+			- Spalten angeben in denen die Daten der entsprechenden Compartements liegen (Columns) 
+		- Datendatei hochladen (Upload Data)  
+Fitting Tab: 
+	Im Fitting Tab kann man den Fit starten und die Ergebnisse des Fits, sowie die
+	hochgeladenen Daten anzeigen lassen. 
+		Vorgehensweise: 
+			- Startzeitpunkt und Anzahl der zu verwendenden Zeitpunkte angeben (start, step) 
+			- Fit starten (Fit) 
+			- Anschließend Fit anzeigen lassen:  
+				- Fit: Daten und Modell mit optimalen Parameterwerten
+				- Statistic: Statistische Werte zum Fitting Prozess
+				- Data: Vom Benutzer hochgeladene Daten
+Settings Tab: 
+	Im Settings Tab kann man verschiedene Einstellungen vornehmen, die sowohl den Fitting 
+	Prozess als auch die Visualisierung der Daten betreffen. 
+		- General Settings: 
+			- Scale: Hier kann man zwischen linearer und logarithmischer Skala, 
+			         die Skalen werden entsprechend angepasst.				
+		- Fitting:
+			- Fitting-Algorithm: Hier kann man den Algorithmus auswählen,
+						   der für die Berechnung des Least-Square Fits 
+						   verwendet werden soll. 
+			- Attempt(s): Anzahl der Versuche, die unternommen werden sollen um
+					  ein Modell an die Daten anzugleichen. Bei jedem Versuch
+					  werden die Anfangsparameter aus dem Intervall [Lower-Bound, Upper-Bound]
+					  zufällig und uniform ausgewählt. 
+			- Max Evals: Maximale Anzahl der Iterationen die der Fitting Algorithmus vornehmen soll, 
+				       bevor er die Berechnung abbricht. 
+			- Intervention(s): Anzahl der Parameterwechsel (Interventions) die man im Fitting Prozess 
+	                               berücksichtigen will. 
+						 (Achtung: Es müssen Daten für alle Compartements vorliegen [Ausnahme: Susceptibles])
+			- Upper-Bound/Lower-Bound: Hier kann man ein Intervall angeben, aus dem man die 
+							   initialen Werte der Modellparameter auswählen will. 
+							   Sollte gegebenensfalls angepasst werden. (Default: [0,1])
+Edit Tab: 
+	Im Edit Tab kann man Spalten aus verschiedenen CSV-Dateien in eine einzige Datei hinein kopieren. 
+		Vorgehensweise: 
+			- Column: Spalte in der die gewünschten Daten stehen angeben
+			- start/step: Zeilen in denen die Daten stehen angeben
+			- name: Name der entsprechenden Spalte in der neuen Datei angeben
+			- Download: Datei herunterladen
+			- Add Column: Spalte in die neue Datei integrieren
+	Wurde eine Spalte hinzugefügt, erscheint auf der rechten Seite der Applikation der Spaltenname
+	und ein Button zum Löschen der Spalte. 
+
+
+
+Ideen zur Erweiterung des Tools: 
+	- Mechanismus einbauen, der es erlaubt lange Berechnungen abzubrechen 
+	(Befehl zum Abbruch self.threadpool.releaseThread())
+	- Show Header implementieren: Auflistung aller Spalten einer Datendatei mit Namen und Spaltennummer.
