@@ -18,3 +18,6 @@ This script contains two classes whose objects are used in the script "fitting_t
 
 ## thread_handling_classes.py ##
 This script contains two classes that are used to create an additional thread (besides the main tread) that controls the elaborate calculations necessary to fit the model parameters to the data. 
+
+## fitting_tool_ui.ui ## 
+Diese Datei wurde mit dem sogenannten QtDesigner erstellt. Diese Datei kann in eine Python Datei umgewandelt werden und generiert automatisch den Code, der notwendig ist um die Benutzerschnittstelle zu zeichnen. Der entsprechende Befehl für die Erstellung der Python Datei ist "python -m PyQt5.uic.pyuic -x [FILENAME].ui -o [FILENAME].py"
