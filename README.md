@@ -9,3 +9,6 @@ This script contains three functions in total. The function "Fit" takes care of 
 
 ## genfitalg.py ## 
 This class takes a model and data and generally calculates those parameters of the model for which the Mean Square Error with respect to the data is as small as possible. This class is called by the "Fit" method. 
+
+## find_interventions.py ## 
+This class also calculates the mean square error between the model and the data, but takes into account the possible occurrence of parameter changes, i.e. so-called "interventions". The number of possible interventions must be defined by the user beforehand.
